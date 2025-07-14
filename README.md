@@ -4,6 +4,20 @@ A **Model Context Protocol (MCP) server** that provides seamless access to Flipk
 
 ## 🚀 Quick Start
 
+### 🐳 Docker (Recommended)
+
+```bash
+# Build and start all services (scraper API + MCP server)
+./build.sh
+
+# Or use Docker Compose directly
+docker-compose up --build -d
+```
+
+See [DOCKER_README.md](DOCKER_README.md) for detailed Docker setup instructions.
+
+### 📦 Manual Installation
+
 ```bash
 # Install dependencies
 uv add mcp[cli] httpx

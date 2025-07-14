@@ -1,9 +1,10 @@
 """
 Configuration constants for the Flipkart MCP Server.
 """
+import os
 
 # API Configuration
-BASE_URL = "http://localhost:3000"
+BASE_URL = os.getenv("FLIPKART_API_BASE_URL", "http://localhost:3000")
 
 # Server Configuration
 SERVER_NAME = "Flipkart API Server"

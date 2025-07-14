@@ -1,0 +1,40 @@
+services:
+  flipkart-scraper-api:
+    build:
+      context: ./flipkart-scraper-api
+      dockerfile: Dockerfile
+    container_name: flipkart-scraper-api
+    ports:
+      - "3000:3000"
+    environment:
+      - DEPLOYMENT_URL=0.0.0.0:3000
+    networks:
+      - flipkart-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flipkart-mcp-server
+    ports:
+      - "8000:8000"
+    environment:
+      - FLIPKART_API_BASE_URL=http://flipkart-scraper-api:3000
+    depends_on:
+      flipkart-scraper-api:
+        condition: service_healthy
+    networks:
+      - flipkart-network
+
+networks:
+  flipkart-network:
+    driver: bridge
+
+volumes:
+  flipkart-data: 
