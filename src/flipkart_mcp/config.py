@@ -5,6 +5,7 @@ import os
 
 # API Configuration
 BASE_URL = os.getenv("FLIPKART_API_BASE_URL", "http://localhost:3000")
+PORT = os.getenv("PORT", 8000)
 
 # Server Configuration
 SERVER_NAME = "Flipkart API Server"

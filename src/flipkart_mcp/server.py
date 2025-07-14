@@ -27,7 +27,7 @@ def create_server() -> FastMCP:
     """Create and configure the FastMCP server with all tools, resources, and prompts."""
     
     # Initialize the MCP server
-    mcp = FastMCP(SERVER_NAME, host="0.0.0.0", port=8000)
+    mcp = FastMCP(SERVER_NAME, host="0.0.0.0", port=PORT)
     
     # Register Tools (Model-Controlled)
     mcp.tool()(search_products)
