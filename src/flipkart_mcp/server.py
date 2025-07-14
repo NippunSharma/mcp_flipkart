@@ -11,13 +11,13 @@ from mcp.server.fastmcp import FastMCP
 
 # Handle both relative and absolute imports
 try:
-    from .config import SERVER_NAME, RESOURCE_URIS
+    from .config import SERVER_NAME, RESOURCE_URIS, PORT
     from .tools import search_products, get_product_details, search_by_price_range
     from .resources import get_search_help, get_product_help, get_api_status, get_server_info
     from .prompts import get_search_results, get_product_info, find_best_deals, compare_products, track_price_range, seasonal_deals, gift_recommendations
 except ImportError:
     # Fall back to absolute imports when running directly
-    from flipkart_mcp.config import SERVER_NAME, RESOURCE_URIS
+    from flipkart_mcp.config import SERVER_NAME, RESOURCE_URIS, PORT
     from flipkart_mcp.tools import search_products, get_product_details, search_by_price_range
     from flipkart_mcp.resources import get_search_help, get_product_help, get_api_status, get_server_info
     from flipkart_mcp.prompts import get_search_results, get_product_info, find_best_deals, compare_products, track_price_range, seasonal_deals, gift_recommendations
