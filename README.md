@@ -1,4 +1,5 @@
 # Flipkart MCP Server
+[![smithery badge](https://smithery.ai/badge/@NippunSharma/mcp_flipkart)](https://smithery.ai/server/@NippunSharma/mcp_flipkart)
 
 A **Model Context Protocol (MCP) server** that provides seamless access to Flipkart's e-commerce platform through a standardized, AI-friendly interface.
 
@@ -69,6 +70,14 @@ mcp_flipkart/
 ```
 
 ## 🛠️ Installation & Setup
+
+### Installing via Smithery
+
+To install Flipkart Shopping Assistant for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@NippunSharma/mcp_flipkart):
+
+```bash
+npx -y @smithery/cli install @NippunSharma/mcp_flipkart --client claude
+```
 
 ### Prerequisites
 - **Python 3.10+**
