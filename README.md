@@ -22,8 +22,11 @@ See [DOCKER_README.md](DOCKER_README.md) for detailed Docker setup instructions.
 # Install dependencies
 uv add mcp[cli] httpx
 
-# Run in development mode
-uv run mcp dev src/flipkart_mcp/server.py
+# Run with stdio transport (default, recommended for Claude Desktop)
+uv run src/flipkart_mcp/server.py
+
+# Run with HTTP transport (for testing/debugging)
+uv run src/flipkart_mcp/server.py --transport streamable-http --port 8000
 
 # Install in Claude Desktop
 uv run mcp install src/flipkart_mcp/server.py --name "Flipkart Shopping Assistant"
