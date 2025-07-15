@@ -1,7 +1,7 @@
 # Flipkart MCP Server
 
 A **Model Context Protocol (MCP) server** that provides seamless access to Flipkart's e-commerce platform through a standardized, AI-friendly interface.
-Demo Video: [Click Here]([url](https://youtu.be/SgwkgKiALtA)) 
+[Demo Video using Cursor Client](https://youtu.be/SgwkgKiALtA) 
 
 ## 🚀 Quick Start
 
