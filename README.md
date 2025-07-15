@@ -2,6 +2,10 @@
 
 A **Model Context Protocol (MCP) server** that provides seamless access to Flipkart's e-commerce platform through a standardized, AI-friendly interface.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pjc8cC8zVRY?si=EWG-g9oTWG9TOaSW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## 🚀 Quick Start
 
 ### 🐳 Docker (Recommended)
